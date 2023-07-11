@@ -1,0 +1,14 @@
+[package]
+name = "watchduck"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.3.11", features = ["derive"] }
+cgroups-rs = { git="https://github.com/kata-containers/cgroups-rs", rev="1b61c07b6994b792d0cbc91f7d98540514dceb9f"}
+duct = "0.13.6"
+tokio = {version = "1.29.1", features=["full"]}
+ctrlc = "3.4.0"
+lazy_static = "1.4.0"
